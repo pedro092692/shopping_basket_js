@@ -2,10 +2,12 @@ body{
     box-sizing: border-box;
     display: flex;
     font-family: "Roboto", sans-serif;
+    min-height: 100vh;
 }
 
 nav{
     flex-grow: 1;
+    max-width: 5  20px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -42,8 +44,20 @@ nav ul li .row{
     justify-content: space-between;
 }
 
+nav ul li .row div{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 nav ul li .row .chevron{
     transform: rotate(-90deg);
+}
+
+
+nav ul li .row .rotate{
+    transform: rotate(0deg);
+
 }
 
 nav ul li .grid{
@@ -51,6 +65,11 @@ nav ul li .grid{
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 16px;
     place-items: center;
+    display: none;
+}
+
+nav ul li .show-grid{
+    display: grid;
 }
 
 nav ul li .grid div{
