@@ -13,22 +13,18 @@ var pc_parts = {
             {
                 name: 'AMD Ryzen 7 5800X',
                 price: 184,
-                img: 'img'
             },
             {
                 name: 'AMD 3200G Ryzen 3',
                 price: 85,
-                img: 'img 2'
             },
             {
                 name: 'Intel Core i9-14900KF',
                 price: 550,
-                img: 'img 2'
             },
             {
                 name: 'Intel Core i3-12100F',
                 price: 89,
-                img: 'img 2'
             },
         ]
    },
@@ -36,24 +32,20 @@ var pc_parts = {
     img_path: 'img/9041209_gpu_card_icon.png',
     product_list:[
             {
-                name: 'AMD',
-                price: 184,
-                img: 'img'
+                name: 'RTX 4060 EVO OC Edition 8GB ',
+                price: 505,
             },
             {
-                name: 'nvidia',
-                price: 85,
-                img: 'img 2'
+                name: 'RX 6700 XT CORE 12 GB',
+                price: 289,
             },
             {
-                name: 'Intel Core i9-14900KF',
-                price: 550,
-                img: 'img 2'
+                name: 'RX 7600 XT 16 GB',
+                price: 320,
             },
             {
-                name: 'Intel Core i3-12100F',
-                price: 89,
-                img: 'img 2'
+                name: 'GeForce RTX™ 4090 24 GB',
+                price: 1729,
             },
         ]
     },
@@ -61,24 +53,20 @@ var pc_parts = {
         img_path: 'img/2130484_electronic_ram_technology_web_computer_icon.png',
         product_list:[
             {
-                name: 'AMD',
-                price: 184,
-                img: 'img'
+                name: 'KLEVV DDR4 8GB (1x8GB) 3200MHz',
+                price: 15,
             },
             {
-                name: 'nvidia',
-                price: 85,
-                img: 'img 2'
+                name: 'Corsair 16GB DDR4 3200MHz',
+                price: 60,
             },
             {
-                name: 'Intel Core i9-14900KF',
-                price: 550,
-                img: 'img 2'
+                name: 'Serie DDR4 Owl 3200',
+                price: 33,
             },
             {
-                name: 'Intel Core i3-12100F',
-                price: 89,
-                img: 'img 2'
+                name: 'T-Force Vulcan Z (2x8GB) 3200MHz',
+                price: 33,
             },
         ]
     },      
@@ -86,24 +74,20 @@ var pc_parts = {
         img_path: 'img/8541995_hdd_data_icon.png',
         product_list:[
                 {
-                    name: 'AMD',
-                    price: 184,
-                    img: 'img'
+                    name: 'Se HDD 4 TB',
+                    price: 90,
                 },
                 {
-                    name: 'nvidia',
-                    price: 85,
-                    img: 'img 2'
+                    name: 'JPS800 2TB PCIe',
+                    price: 99,
                 },
                 {
-                    name: 'Intel Core i9-14900KF',
-                    price: 550,
-                    img: 'img 2'
+                    name: 'S501 1TB NVMe SSD',
+                    price: 60,
                 },
                 {
-                    name: 'Intel Core i3-12100F',
-                    price: 89,
-                    img: 'img 2'
+                    name: 'Sam 870 EVO 1TB',
+                    price: 100,
                 },
             ]
     },   
@@ -111,24 +95,20 @@ var pc_parts = {
         img_path: 'img/111006_power_supply_icon.png',
         product_list:[
                 {
-                    name: 'AMD',
-                    price: 184,
-                    img: 'img'
+                    name: 'ES1000 80+ gold',
+                    price: 100,
                 },
                 {
-                    name: 'nvidia',
-                    price: 85,
-                    img: 'img 2'
+                    name: 'Redragon PSU007 80+',
+                    price: 114,
                 },
                 {
-                    name: 'Intel Core i9-14900KF',
-                    price: 550,
-                    img: 'img 2'
+                    name: 'CORSAIR rm860x 80+ gold',
+                    price: 114,
                 },
                 {
-                    name: 'Intel Core i3-12100F',
-                    price: 89,
-                    img: 'img 2'
+                    name: 'Corsair rm750 80+ gold',
+                    price: 100,
                 },
             ]
     },
@@ -136,24 +116,21 @@ var pc_parts = {
         img_path: 'img/211865_monitor_icon.png',
         product_list:[
                 {
-                    name: 'AMD',
-                    price: 184,
-                    img: 'img'
+                    name: 'Monitor IPS de 27 pulgadas 75 Hz',
+                    price: 100,
                 },
                 {
-                    name: 'nvidia',
-                    price: 85,
+                    name: 'Monitor curvo para juegos de 24',
+                    price: 88,
+                },
+                {
+                    name: 'Monitor Full HD de 22 pulgadas',
+                    price: 70,
                     img: 'img 2'
                 },
                 {
-                    name: 'Intel Core i9-14900KF',
-                    price: 550,
-                    img: 'img 2'
-                },
-                {
-                    name: 'Intel Core i3-12100F',
-                    price: 89,
-                    img: 'img 2'
+                    name: 'Gaming Monitor de 43 pulgadas, 144 Hz',
+                    price: 651,
                 },
             ]
     },
@@ -161,24 +138,20 @@ var pc_parts = {
         img_path: 'img/326558_blank_check_box_icon.png',
         product_list:[
             {
-                name: 'AMD',
-                price: 184,
-                img: 'img'
+                name: 'JONSBO D31 MESH',
+                price: 145,
             },
             {
-                name: 'nvidia',
-                price: 85,
-                img: 'img 2'
+                name: 'JONSBO D300 Negro',
+                price: 130,
             },
             {
-                name: 'Intel Core i9-14900KF',
-                price: 550,
-                img: 'img 2'
+                name: 'Corsair 4000D Airflow',
+                price: 93,
             },
             {
-                name: 'Intel Core i3-12100F',
-                price: 89,
-                img: 'img 2'
+                name: 'Cooler Master',
+                price: 40,
             },
         ]
     },
@@ -186,24 +159,20 @@ var pc_parts = {
         img_path: 'img/8664826_keyboard_computer_icon.png',
         product_list:[
             {
-                name: 'AMD',
-                price: 184,
-                img: 'img'
+                name: 'RedThunder K10 ',
+                price: 50,
             },
             {
-                name: 'nvidia',
-                price: 85,
-                img: 'img 2'
+                name: 'Logitech MK270',
+                price: 23,
             },
             {
-                name: 'Intel Core i9-14900KF',
-                price: 550,
-                img: 'img 2'
+                name: 'Razer Huntsman V2 ',
+                price: 130,
             },
             {
-                name: 'Intel Core i3-12100F',
+                name: 'HyperX Alloy Origins',
                 price: 89,
-                img: 'img 2'
             },
         ]
     },
@@ -211,24 +180,20 @@ var pc_parts = {
         img_path: 'img/3671817_mouse_icon.png',
         product_list:[
             {
-                name: 'AMD',
-                price: 184,
-                img: 'img'
+                name: 'Logitech MX Master 3S',
+                price: 100,
             },
             {
-                name: 'nvidia',
-                price: 85,
-                img: 'img 2'
+                name: 'Logitech G502 HERO',
+                price: 45,
             },
             {
-                name: 'Intel Core i9-14900KF',
-                price: 550,
-                img: 'img 2'
+                name: 'Razer Basilisk V3',
+                price: 50,
             },
             {
-                name: 'Intel Core i3-12100F',
-                price: 89,
-                img: 'img 2'
+                name: 'BenQ EC2-C Zowie',
+                price: 45,
             },
         ]
     },
@@ -236,24 +201,21 @@ var pc_parts = {
         img_path: 'img/4733388_basic_menu_other_ui_icon.png',
         product_list:[
                 {
-                    name: 'AMD',
-                    price: 184,
-                    img: 'img'
+                    name: 'Black Shark Alfombrilla de mouse',
+                    price: 39,
                 },
                 {
-                    name: 'nvidia',
-                    price: 85,
+                    name: 'ID-COOLING ZOOMFLOW',
+                    price: 65,
+                },
+                {
+                    name: 'Cooler Master Hyper 212',
+                    price: 18,
                     img: 'img 2'
                 },
                 {
-                    name: 'Intel Core i9-14900KF',
-                    price: 550,
-                    img: 'img 2'
-                },
-                {
-                    name: 'Intel Core i3-12100F',
-                    price: 89,
-                    img: 'img 2'
+                    name: 'NZXT Kraken 240 ',
+                    price: 130,
                 },
             ]
     },
@@ -289,8 +251,15 @@ function populate_products(){
         div_grid.classList.add('grid');
 
         for(let product of pc_parts[part].product_list){
+            let img_product_path = 'img/'+ part + '/' +part+'_' + parseInt(pc_parts[part].product_list.indexOf(product) + 1) + '.jpg';
             div_part = document.createElement('div');
-            div_part.innerHTML = product.name;
+            part_img = document.createElement('img');
+            part_img.setAttribute('src', img_product_path);
+            div_part.appendChild(part_img);
+            div_part.innerHTML += product.name;
+            let price = document.createElement('p');
+            price.innerHTML = 'Price: ' + product.price + '$';
+            div_part.appendChild(price);
             div_grid.appendChild(div_part);
         }
 

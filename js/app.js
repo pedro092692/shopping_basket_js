@@ -4,23 +4,23 @@
 https://github.com/pedro092692
 */
 
-var active = false;
-var grid;
-var cheron; 
 
 function show_components(li_element){
-    console.log(active);
-    if(!active){
-        chevron = li_element.querySelector('.chevron');
-        grid = li_element.querySelector('.grid');
-        chevron.classList.add('rotate');
-        grid.classList.add('show-grid');
-        active = true;
-    }else{
+    
+    let is_active = li_element.getAttribute('active');
+    let chevron = li_element.querySelector('.chevron');
+    let grid = li_element.querySelector('.grid');
+    
+    if(is_active == 'true'){
         grid.classList.remove('show-grid');
         chevron.classList.remove('rotate');
-        active = false;
+        li_element.setAttribute('active', false);
+    }else{
         
+        chevron.classList.add('rotate');
+        grid.classList.add('show-grid');
+        li_element.setAttribute('active', true);
     }
+       
     
 }
