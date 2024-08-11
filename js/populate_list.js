@@ -222,7 +222,9 @@ var pc_parts = {
 }
 
 function populate_products(){
+
     let ul = document.getElementById('main-ul');
+    
     for(let part in pc_parts){
         let li = document.createElement('li');
         li.addEventListener('click', function(){
@@ -253,13 +255,22 @@ function populate_products(){
         for(let product of pc_parts[part].product_list){
             let img_product_path = 'img/'+ part + '/' +part+'_' + parseInt(pc_parts[part].product_list.indexOf(product) + 1) + '.jpg';
             div_part = document.createElement('div');
+            div_part.setAttribute('draggable', 'true');
             part_img = document.createElement('img');
             part_img.setAttribute('src', img_product_path);
+            part_img.setAttribute('draggable', 'false');
             div_part.appendChild(part_img);
             div_part.innerHTML += product.name;
             let price = document.createElement('p');
             price.innerHTML = 'Price: ' + product.price + '$';
             div_part.appendChild(price);
+            div_part.addEventListener('dragstart', pc_part_moving)
+            
+            // attributes 
+            div_part.setAttribute('part_type', part);
+            div_part.setAttribute('name', product.name);
+            div_part.setAttribute('price', product.price);
+
             div_grid.appendChild(div_part);
         }
 

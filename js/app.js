@@ -4,23 +4,30 @@
 https://github.com/pedro092692
 */
 
+var pc_part;
 
-function show_components(li_element){
-    
-    let is_active = li_element.getAttribute('active');
-    let chevron = li_element.querySelector('.chevron');
-    let grid = li_element.querySelector('.grid');
-    
-    if(is_active == 'true'){
-        grid.classList.remove('show-grid');
-        chevron.classList.remove('rotate');
-        li_element.setAttribute('active', false);
-    }else{
-        
-        chevron.classList.add('rotate');
-        grid.classList.add('show-grid');
-        li_element.setAttribute('active', true);
-    }
-       
-    
+function pc_part_moving(event){
+    pc_part = event.target;
+
 }
+
+function test(event){
+    let part_type = event.target.getAttribute('part_type');
+    if(part_type == pc_part.getAttribute('part_type')){
+        event.target.innerHTML = pc_part.innerHTML;
+    }
+   
+}
+
+function change_part(){
+    let grid = document.querySelector('.main .grid');
+    for(let div of grid.children){
+        div.addEventListener('dragover', e=>{e.preventDefault()})
+        div.addEventListener('drop', function(event){
+            test(event);
+        });
+    }
+
+}
+
+change_part();
