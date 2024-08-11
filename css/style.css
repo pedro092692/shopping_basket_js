@@ -114,7 +114,7 @@ nav ul li .grid div p{
     box-shadow: 9px 1px 6px -4px rgba(0,0,0,0.64);
 }
 
-.main h2{
+.main h2, .summary h2{
     font-size: 32px;
     text-transform: uppercase;
     font-weight: 600;
@@ -131,6 +131,7 @@ nav ul li .grid div p{
     place-items: center;
     place-content: start;
     row-gap: 16px;
+    overflow-y: auto;
 }
 
 .main .grid div{
@@ -157,6 +158,34 @@ nav ul li .grid div p{
 
 
 .summary{
+    padding: 16px 16px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 
 }
+
+
+.summary ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px; 
+}
+
+.summary ul li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+
+#total{
+    font-weight: 800;
+    order: 15;
+    border-bottom: none;
+}
+
