@@ -166,6 +166,11 @@ nav ul li .grid div p{
     cursor: pointer;
 }
 
+.main .grid .drop{
+    border: 2px dashed red;
+
+}
+
 
 .summary{
     padding: 16px 16px;

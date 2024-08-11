@@ -23,21 +23,25 @@ function reset_all(){
 }
 
 
-
-
 function pc_part_moving(event){
     pc_part = event.target;
+    type = pc_part.getAttribute('part_type');
+    let drop_zone = document.querySelector('.main div[part_type="'+ type+ '"]')
+    pc_part.addEventListener('dragend', ()=>{
+        drop_zone.classList.remove('drop');
+    })
+    drop_zone.classList.add('drop');
 
 }
 
 function add_item(event){
+    event.target.classList.remove('drop');
     let part_type = event.target.getAttribute('part_type');
     let price = pc_part.getAttribute('price');
     let name = pc_part.getAttribute('name');
     if(part_type == pc_part.getAttribute('part_type')){
         event.target.innerHTML = pc_part.innerHTML;
         if(event.target.getAttribute('active') == 'true'){
-            console.log('this element is active');
             remove_summary_item(part_type);
             calc_total(parseInt(price));
             show_total();
@@ -48,6 +52,12 @@ function add_item(event){
             show_total();
             add_summary_item(name, price, part_type);
         }
+
+        // save data 
+        let main_content = get_main();
+        let summary_content = get_summary();
+
+        save_data(main_content, summary_content);
         
     }
 
@@ -101,6 +111,38 @@ function get_original_div(){
 
 }
 
+function get_main(){
+    let main_content = document.querySelector('.main .grid');
+    return main_content.innerHTML;
+}
+
+function get_summary(){
+    let summary = document.querySelector('#ul-summary');
+    return summary.innerHTML;
+}
+
+function save_data(main, summary){
+    localStorage.setItem('main_content', main);
+    localStorage.setItem('summary', summary);
+    localStorage.setItem('total', grand_total);
+}
+
+function load_data(){
+    let main = localStorage.getItem('main_content');
+    let summary = localStorage.getItem('summary');
+    let total = localStorage.getItem('total');
+    if(main && summary && total){
+        let grid = document.querySelector('.main .grid');
+        ul_summary.innerHTML = summary;
+        grid.innerHTML = main;
+        grand_total = parseInt(total);
+        change_part();
+    }
+    
+    
+}
+
 show_total();
 change_part();
+load_data();
 
