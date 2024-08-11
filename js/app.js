@@ -6,7 +6,24 @@ https://github.com/pedro092692
 
 var pc_part;
 var grand_total = 0;
+const original_divs = get_original_div();
 const ul_summary = document.getElementById('ul-summary');
+const reset_button = document.getElementById('reset');
+
+reset_button.addEventListener('click', reset_all)
+
+
+function reset_all(){
+    let grid = document.querySelector('.main .grid');
+    grand_total = 0;
+    ul_summary.innerHTML = '<li id="total"></li>';
+    grid.innerHTML = original_divs;
+    change_part();
+    show_total();
+}
+
+
+
 
 function pc_part_moving(event){
     pc_part = event.target;
@@ -78,5 +95,12 @@ function show_total(){
     
 }
 
+function get_original_div(){
+    let grid = document.querySelector('.main .grid');
+    return grid.innerHTML;
+
+}
+
 show_total();
 change_part();
+
